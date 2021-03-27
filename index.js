@@ -11,9 +11,11 @@ const server = http.createServer((request, response)=>{
             response.writeHead(200, {'Content-Type': 'application/json'});
             // response.statusCode(200);
             // response.statusMessage('ok');
-            response.end(JSON.parse('Hola mundo'));
+            response.end(JSON.stringify('Hola mundo'));
+            break;
         default:
-
+            response.writeHead(404, {'Content-Type': 'text/plain'});
+            response.end('No encontrado')
 
     }
 

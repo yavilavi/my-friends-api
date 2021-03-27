@@ -1,0 +1,23 @@
+{
+  "name": "my-friends-api",
+  "version": "1.0.0",
+  "description": "Repaso express henry",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yavilavi/my-friends-api.git"
+  },
+  "author": "Yilmer Avila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yavilavi/my-friends-api/issues"
+  },
+  "homepage": "https://github.com/yavilavi/my-friends-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

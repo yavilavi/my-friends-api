@@ -23,3 +23,8 @@ const server = http.createServer((request, response)=>{
 server.listen(port,()=>{
     console.log(`Servidor operativo en puerto ${port} y dirección localhost`);
 });
+
+
+server.on('error', error => {
+    console.log(error);
+})

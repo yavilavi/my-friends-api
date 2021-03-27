@@ -1,6 +1,12 @@
 const http = require('http');
 // import http from 'http'
-const port = 3090
+
+// process.env.PORT
+
+
+const port = parseInt(process.env.PORT) || 3090;
+
+
 const server = http.createServer((request, response)=>{
 
     // console.log('Ruta: ', request.url);

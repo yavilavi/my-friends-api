@@ -3,14 +3,19 @@ const http = require('http');
 
 const server = http.createServer((request, response)=>{
 
-    console.log('Ruta: ', request.url);
+    // console.log('Ruta: ', request.url);
 
-    // switch (request.url) {
-    //
-    //     case '/':
-    //         response.wr
-    //
-    // }
+    switch (request.url) {
+
+        case '/':
+            response.writeHead(200, {'Content-Type': 'application/json'});
+            // response.statusCode(200);
+            // response.statusMessage('ok');
+            response.end(JSON.parse('Hola mundo'));
+        default:
+
+
+    }
 
 
 });

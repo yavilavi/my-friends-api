@@ -15,13 +15,13 @@ const server = http.createServer((request, response)=>{
             break;
         default:
             response.writeHead(404, {'Content-Type': 'text/plain'});
-            response.end('No encontrado')
+            response.end('No encontrado');
 
     }
 
 
 });
 
-server.listen(4000,()=>{
+server.listen(3090,()=>{
     console.log('Servidor operativo en puerto 4000 y dirección localhost');
 });
